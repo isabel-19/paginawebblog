@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        
+        <title>BLOG</title>
+        
+        <link rel="stylesheet" href="css/estilos.css">
+        <link  rel="stylesheet icon" href="imagenes/01.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <script>
+        let scrollPercentage =()=>{
+            let scrollProgress = document.getElementById("progress");
+            let progressValue=document.getElementById("progress-value");
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round(pos * 100/calcHeight);
+            scrollProgress.style.background = `conic-gradlent(#e2d30c ${scrollValue}%, #2b2f38 ${scrollValue}%)`;
+            progressValue.textContent=`${scrollValue}`;
+
+        }
+
+        window.onscroll = scrollPercentage;
+        window.onload = scrollPercentage;
+    </script>
+    
+    
+    
+    </head>
+
+<body>
+ 
+
+    <div id="progress">
+        <span id="progress-value"></span>
+    </div>
+
+
+
+    <nav class="navigation">
+
+        <a href= "#" class ="logo">Blog</a>
+
+
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn"  class ="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+
+        <ul class="menu">
+            <li ><a href="index.html">Inicio</a></li>
+            <li><a href= "mostrarpost.php">Blog</a></li>
+            <li><a href= "registro.php">Registrarse</a></li>
+            <li><a href= "login.php" class="nav-acceder">Acceder</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container">
+    <div class="top-bar">
+        <span><br/>Blog</span>
+        <div class="numero-articulo"><span>
+        </span><br/></div>
+
+    </div>
+
+    <section id="blog">
+        <div class="blog-titulo">
+            <h1>Bienvenido a este blog</h1>
+        </div>
+
+        <ul class="blog-filter">
+            <li class="list blog-filter-active" data-filter="todo">todo</li>/
+            <li class="list" data-filter="conocimiento">conocimiento</li>/
+            <li class="list" data-filter="tegnologia" >tegnologia</li>/
+            <li class="list" data-filter="naturaleza">naturaleza</li>/
+            <li class="list" data-filter="noticias">noticias</li>/
+            <li class="list"data-filter="cultura">cultura</li>
+
+
+        </ul>
+
+
+
+        <div class="blog-container ">
+
+            <a href="#" class="blog-box conocimiento">
+
+                <div class="blog-img">
+                    <img src="imagenes/blog-1.jpg" alt="1">
+                </div>
+
+                <div class="blog-text">
+                    <span class="category">cConocimiento</span>
+                    <strong> Acción y efecto de conocer </strong>
+                    <span class="blog-post-time">Febrero - 5 min lectura</span>
+                </div>
+            </a>
+
+
+            <a href="#" class="blog-box tegnologia">
+
+                <div class="blog-img">
+                    <img src="imagenes/blog-3.jpg" alt="1">
+                </div>
+
+                <div class="blog-text">
+                    <span class="category">Tegnologia</span>
+                    <strong> Acción y efecto de conocer </strong>
+                    <span class="blog-post-time">Febrero - 5 min lectura</span>
+                </div>
+            </a>
+
+            <a href="#" class="blog-box naturaleza">
+
+                <div class="blog-img">
+                    <img src="imagenes/blog-4.jpg" alt="1">
+                </div>
+
+                <div class="blog-text">
+                    <span class="category">naturaleza</span>
+                    <strong> Acción y efecto de conocer </strong>
+                    <span class="blog-post-time">Febrero - 5 min lectura</span>
+                </div>
+            </a>
+
+            <a href="#" class="blog-box noticias">
+
+                <div class="blog-img">
+                    <img src="imagenes/blog-5.jpg" alt="1">
+                </div>
+
+                <div class="blog-text">
+                    <span class="category">noticias</span>
+                    <strong> Acción y efecto de conocer </strong>
+                    <span class="blog-post-time">Febrero - 5 min lectura</span>
+                </div>
+            </a>
+
+            <a href="#" class="blog-box cultura">
+
+                <div class="blog-img ">
+                    <img src="imagenes/blog-2.jpg" alt="1">
+                </div>
+
+                <div class="blog-text">
+                    <span class="category">cultura</span>
+                    <strong> Acción y efecto de conocer </strong>
+                    <span class="blog-post-time">Febrero - 5 min lectura</span>
+                </div>
+            </a>
+        </div>
+
+
+
+
+    </section>
+
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-heading">
+
+            <h4>HORA DE DESPLAZARSE
+                <br/>
+                
+            </h4>
+
+            <h3>MAS INFORMACION</h3>
+
+
+
+        </div>
+
+        <div class="footer-content">
+            
+            <div class="footer-box">
+
+                <strong>EXPLORAR</strong>
+                <ul>
+
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-link">
+                <a href="#">Privacidad</a>
+                <a href="#">Terminos</a>
+            </div>
+
+            <div class="copyright">
+                <span>Hecho por Isabel</span>
+                <span>© 2023 Isabel</span>
+            </div>
+
+
+    
+        </div>
+ 
+
+
+
+
+    </div>
+</footer>
+
+
+
+<script src="js/jquery.js"></script>
+
+<script type="text/javascript">
+
+$(document).on('click','.blog-filter li', function(){
+    $(this).addClass('blog-filter-active').siblings().removeClass('blog-filter-active')
+
+});
+
+
+$(document).ready(function(){
+    $('.list').click(function(){
+        const value = $(this).attr('data-filter');
+        if(value =='todo'){
+            $('.blog-box').show('1000');
+
+        }
+        else{
+            $('.blog-box').not('.'+value).hide('1000');
+            $('.blog-box').filter('.'+value).show('1000');
+        }
+    });
+
+});
+
+
+
+
+
+</script>
+
+</body>
+</html>
